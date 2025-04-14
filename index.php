@@ -350,12 +350,15 @@
                 </div>
             </div>
         </section>
+
         <!-- Video -->
         <div class="video-container">
             <iframe width="1140" height="605" src="https://www.youtube.com/embed/yvSA11yttxk" title="J&amp;T EXPRESS CHÍNH THỨC NIÊM YẾT TẠI SỞ GIAO DỊCH CHỨNG KHOÁN HỒNG KÔNG (HKEX)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
+
         <!-- Download App -->
-        <img class="mt-3"src="assets/images/dowload.JPG" alt="About Us">
+        <img class="mt-3"src="assets/images/dowload.JPG" alt="About Us" style="width: 100%; height: auto;">
+
         <!-- Blog Section -->
         <section class="blog-section py-16">
             <div class="container">
@@ -400,6 +403,7 @@
                 </div>
             </div>
         </section>
+
         <!-- Partners Section -->
         <section class="testimonials py-5 bg-light">
             <div class="container">

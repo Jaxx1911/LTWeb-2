@@ -28,8 +28,9 @@ try {
         exit;
     }
 
-    // Get recent orders
-    $sql = "SELECT o.*
+    // Get recent orders with status from assignment table
+    $sql = "SELECT o.*, 
+            COALESCE((SELECT status FROM assignment WHERE order_id = o.id ORDER BY assigned_at DESC LIMIT 1), 'new') as status
             FROM orders o
             WHERE o.shipper_id = :shipper_id
             ORDER BY o.created_at DESC

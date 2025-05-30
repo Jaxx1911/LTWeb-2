@@ -13,6 +13,8 @@ if (!$pdo) {
 if (isset($_SESSION['user_id'])) {
     if ($_SESSION['role'] == 'admin') {
         header("Location: admin.php");
+    } elseif ($_SESSION['role'] == 'shipper') {
+        header("Location: shipper-dashboard.php");
     } else {
         header("Location: user.php");
     }
@@ -38,9 +40,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         $_SESSION['username'] = $user['username'];
                         $_SESSION['role'] = $user['role'];
                         $_SESSION['email'] = $user['email'];
+                        $_SESSION['name'] = $user['name'];
+                        $_SESSION['code'] = $user['code'];
                         
                         if ($user['role'] == 'admin') {
                             header("Location: admin.php");
+                        } elseif ($user['role'] == 'shipper') {
+                            header("Location: shipper-dashboard.php");
                         } else {
                             header("Location: user.php");
                         }

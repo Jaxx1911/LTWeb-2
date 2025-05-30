@@ -1,8 +1,0 @@
-.main-container {
-    background-image: url('https://khachhang.jtexpress.vn/img/login_bg.9cffbfc1.png');
-    width: 100%;
-    min-height: calc(100vh - 64px);
-    background-size: 100% 100%;
-    overflow: auto;
-    margin-top: 64px;
-}
